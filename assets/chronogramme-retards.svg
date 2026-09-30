@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+<title id="title">Chronogramme de l'opérateur t1/E/t2</title><desc id="desc">Signal E monte avant la sortie retardée de t1 et redescend avant la sortie retardée de t2.</desc>
+<rect width="760" height="360" rx="18" fill="#f8fafc"/>
+<text x="32" y="39" fill="#0f172a" font-family="sans-serif" font-size="20" font-weight="700">Opérateur temporel t₁ / E / t₂ — schéma pédagogique</text>
+<g stroke="#cbd5e1" stroke-width="1"><path d="M100 70V300M100 300H700"/><path d="M100 130H700M100 245H700" stroke-dasharray="5 6"/></g>
+<g fill="#334155" font-family="sans-serif" font-size="17"><text x="47" y="138">E</text><text x="30" y="252">sortie</text><text x="684" y="326">temps →</text></g>
+<path d="M100 170H160V90H360V170H700" fill="none" stroke="#2563eb" stroke-width="7" stroke-linejoin="round"/>
+<path d="M100 285H200V205H440V285H700" fill="none" stroke="#059669" stroke-width="7" stroke-linejoin="round"/>
+<g stroke="#475569" stroke-width="2"><path d="M160 182V202M200 297V316M360 182V202M440 297V316"/></g>
+<g stroke="#f59e0b" stroke-width="3" fill="none"><path d="M163 195H197"/><path d="M163 195l7-5M163 195l7 5M197 195l-7-5M197 195l-7 5"/><path d="M363 310H437"/><path d="M363 310l7-5M363 310l7 5M437 310l-7-5M437 310l-7 5"/></g>
+<g fill="#92400e" font-family="sans-serif" font-size="18" font-weight="700"><text x="168" y="187">t₁</text><text x="391" y="303">t₂</text></g>
+<text x="470" y="228" fill="#059669" font-family="sans-serif" font-size="14">sortie retardée</text>
+<text x="470" y="102" fill="#2563eb" font-family="sans-serif" font-size="14">signal E</text>
+</svg>
