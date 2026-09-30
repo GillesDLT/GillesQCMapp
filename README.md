@@ -1,6 +1,6 @@
 # QCM-gilles-app
 
-Application de révision locale, en français, sans compte ni serveur obligatoire.
+Application de révision de QCM des matières de GM, en français, sans compte ni serveur obligatoire.
 
 ## Lancer l'application
 
