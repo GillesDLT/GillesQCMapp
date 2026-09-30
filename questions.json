@@ -3024,5 +3024,840 @@
     "explanation": "Le front montant de E est retardé de t₁ et le front descendant de E de t₂. Le dessin est un schéma pédagogique recréé à partir de la définition du cours.",
     "image": "./assets/chronogramme-retards.svg",
     "source": "Schéma pédagogique recréé à partir de GA701 — séance 2, §4.3, p.23"
+  },
+  {
+    "id": "auto-s2-009",
+    "subject": "automatisme",
+    "type": "single",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Selon la règle 5 du GRAFCET, si une même étape doit être simultanément activée et désactivée, que se passe-t-il ?",
+    "options": [
+      "Elle est désactivée : priorité à la désactivation.",
+      "Elle reste active : priorité à l’activité des étapes.",
+      "Le grafcet est bloqué jusqu’à réinitialisation.",
+      "Les deux événements sont ignorés."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Règle 5 : si une même étape doit être simultanément activée et désactivée, elle reste active — en résumé, priorité à l’activité des étapes.",
+    "image": null,
+    "source": "GA701 — séance 2, §3.6 (règle 5)"
+  },
+  {
+    "id": "auto-s2-010",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "À quoi servent les règles 4 et 5 du GRAFCET ?",
+    "options": [
+      "À gérer des situations exceptionnelles",
+      "À définir un comportement unique quel que soit l’interpréteur du grafcet",
+      "À dimensionner les actionneurs de la partie opérative",
+      "À remplacer les réceptivités des transitions"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Les règles 4 et 5 gèrent des situations exceptionnelles et permettent un comportement unique, quelle que soit la personne qui interprète le grafcet.",
+    "image": null,
+    "source": "GA701 — séance 2, §3.6 (règle 5)"
+  },
+  {
+    "id": "auto-s2-011",
+    "subject": "automatisme",
+    "type": "single",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "La règle 5 du GRAFCET se résume par quelle priorité ?",
+    "options": [
+      "Priorité à la désactivation des étapes",
+      "Priorité à l’activité des étapes",
+      "Priorité aux transitions",
+      "Priorité à l’étape initiale"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "En résumé de la règle 5 : priorité à l’activité des étapes.",
+    "image": null,
+    "source": "GA701 — séance 2, §3.6 (règle 5)"
+  },
+  {
+    "id": "auto-s2-012",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Selon la règle 2 du GRAFCET, l’évolution de la situation du grafcet ne peut se produire que :",
+    "options": [
+      "lorsque la transition est validée",
+      "lorsque la réceptivité associée à cette transition est vraie",
+      "lorsque toutes les étapes du grafcet sont actives",
+      "lorsque la réceptivité est fausse mais que l’étape aval est active"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Règle 2 : le franchissement ne peut se produire que lorsque la transition est validée et que la réceptivité associée est vraie.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-013",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Lorsque ces deux conditions d’évolution sont réunies (transition validée et réceptivité vraie), la transition :",
+    "options": [
+      "devient franchissable et est alors obligatoirement franchie",
+      "attend la confirmation de l’opérateur",
+      "est définitivement désactivée",
+      "est transformée en étape"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Quand les deux conditions sont réunies, la transition devient franchissable et est obligatoirement franchie.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-014",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Avant que l’étape 2 ne soit active, la transition qui lie les étapes 2 et 3 :",
+    "options": [
+      "est non validée : elle ne peut pas être franchie, même si la condition « a » devient vraie",
+      "est validée dès que « a » devient vraie",
+      "est franchissable",
+      "est déjà franchie"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tant que l’étape 2 est inactive, la transition n’est pas validée : aucune évolution possible avec la seule condition « a ».",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-015",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Quand l’étape 2 devient active, la transition qui lie les étapes 2 et 3 :",
+    "options": [
+      "devient validée",
+      "est automatiquement franchie, quelle que soit la réceptivité",
+      "est supprimée du grafcet",
+      "change de réceptivité"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L’activité de l’étape amont valide la transition ; il faut en plus la réceptivité vraie pour qu’elle devienne franchissable.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-016",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Le franchissement d’une transition provoque simultanément :",
+    "options": [
+      "la désactivation de toutes les étapes actives immédiatement précédentes reliées à cette transition",
+      "l’activation de toutes les étapes immédiatement suivantes reliées à cette transition",
+      "la désactivation de toutes les étapes du grafcet",
+      "l’activation de toutes les étapes du grafcet"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Règle 3 : désactivation des étapes actives amont et activation des étapes aval reliées à la transition, simultanément.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-017",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Lors du franchissement, les deux changements d’activité des étapes interviennent :",
+    "options": [
+      "rigoureusement à la même date",
+      "avec un décalage égal à un cycle de la machine",
+      "dans un ordre non déterminé",
+      "uniquement après l’arrêt de la partie opérative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La désactivation de l’étape 2 et l’activation de l’étape 3 interviennent rigoureusement à la même date.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-018",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Une fois ces modifications d’activité opérées, la transition entre les étapes 2 et 3 est dite :",
+    "options": [
+      "franchie",
+      "validée",
+      "réceptive",
+      "initialisée"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Après les modifications opérées, la transition est dite franchie.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-019",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "À un instant donné, les étapes actives d’un grafcet indiquent :",
+    "options": [
+      "les actions qui se réalisent alors",
+      "les actions déjà terminées depuis le début du cycle",
+      "les réceptivités jamais rencontrées",
+      "le nombre total de transitions du grafcet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Les étapes actives indiquent quelles actions se réalisent à cet instant.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-020",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Pour définir les changements d’activité des étapes, le grafcet prend en compte :",
+    "options": [
+      "ce qui se fait (les étapes actives)",
+      "les conditions prélevées (comptes rendus des capteurs)",
+      "le prix des composants de la partie opérative",
+      "la couleur des fils de câblage"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Il est pris en compte ce qui se fait (étapes actives) et les conditions prélevées (comptes rendus).",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-021",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "La variable d’étape X2 associée à l’étape 2 :",
+    "options": [
+      "vaut 1 lorsque l’étape 2 est active",
+      "vaut 0 lorsque l’étape 2 est inactive",
+      "vaut le numéro de l’étape suivante",
+      "vaut toujours 1"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "La variable d’étape Xn vaut 1 si l’étape n est active, 0 sinon ; elle permet d’utiliser l’état d’une étape dans une réceptivité.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848) — règles d’évolution"
+  },
+  {
+    "id": "auto-s2-022",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Une étape du GRAFCET est :",
+    "options": [
+      "activée lorsque la transition immédiatement précédente est franchie",
+      "désactivée lorsque la transition immédiatement suivante est franchie",
+      "activée dès que sa propre réceptivité devient vraie",
+      "désactivée à chaque front d’horloge"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Une étape est activée par le franchissement de la transition qui la précède et désactivée par le franchissement de celle qui la suit.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848) — règles d’évolution"
+  },
+  {
+    "id": "auto-s2-023",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "L’étape initiale d’un grafcet :",
+    "options": [
+      "est activée au début du fonctionnement (situation initiale)",
+      "est généralement repérée par un double carré",
+      "est obligatoirement la dernière étape du cycle",
+      "ne porte jamais d’action"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "La situation initiale correspond à l’activation des étapes initiales, usuellement repérées par un double carré.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848) — règles d’évolution"
+  },
+  {
+    "id": "auto-s2-024",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Selon la règle 4 du GRAFCET, deux transitions simultanément franchissables sont :",
+    "options": [
+      "simultanément franchies",
+      "franchies l’une après l’autre, par ordre de numéro",
+      "mises en attente d’une décision extérieure",
+      "ignorées jusqu’au cycle suivant"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Règle 4 : deux transitions simultanément franchissables sont simultanément franchies.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848) — règles d’évolution"
+  },
+  {
+    "id": "auto-s2-025",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Une transition est franchissable lorsque :",
+    "options": [
+      "elle est validée et que sa réceptivité associée est vraie",
+      "elle est seulement validée",
+      "sa réceptivité est vraie, même si l’étape amont est inactive",
+      "l’étape aval est déjà active"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Franchissable = validée (étape amont active) ET réceptivité vraie ; elle est alors obligatoirement franchie.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (§3.3–3.4)"
+  },
+  {
+    "id": "auto-s2-026",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "Quelles sont les portions de grafcets correctes au sens du GRAFCET (alternance étape-transition respectée) ?",
+    "options": [
+      "Figure 1",
+      "Figure 2",
+      "Figure 3",
+      "Figure 4"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "La figure 2 relie directement une étape à une étape et la figure 3 relie directement une transition à une transition : l’alternance étape-transition y est violée. Les figures 1 et 4 la respectent (la 4 est une divergence en OU avec une réceptivité par branche).",
+    "image": "./assets/portions-grafcet.svg",
+    "source": "Figure créée pour l’application, d’après les règles du GRAFCET (GA701, séances 1 et 2)"
+  },
+  {
+    "id": "auto-s2-027",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "À la mise en route de l’unité de commande (règle 1), que se passe-t-il ?",
+    "options": [
+      "les étapes initiales sont activées",
+      "toutes les autres étapes sont désactivées",
+      "toutes les étapes sont activées",
+      "le grafcet démarre depuis n’importe quelle étape"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Règle 1 : à la mise en route de l’unité de commande, les étapes initiales sont activées et toutes les autres désactivées.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-028",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Pour changer la situation d’un grafcet, il faut :",
+    "options": [
+      "franchir des transitions préalablement validées",
+      "réinitialiser la partie opérative",
+      "désactiver l’unité de commande",
+      "modifier le cahier des charges"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "L’évolution ne peut se faire qu’à partir des étapes initiales : pour changer la situation, il faut franchir des transitions, préalablement validées.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-029",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Une transition est validée lorsque :",
+    "options": [
+      "les étapes immédiatement précédentes à cette transition sont actives",
+      "toutes les étapes du grafcet sont actives",
+      "sa réceptivité est vraie, indépendamment des étapes",
+      "l’étape immédiatement suivante est inactive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Valider une transition, c’est vérifier que les étapes immédiatement précédentes sont actives ; la réceptivité vraie est ensuite nécessaire pour la franchir.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-030",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — installation de la séance 2",
+    "prompt": "Le grafcet présenté en séance 2 pour l’installation à tapis et vérins décrit :",
+    "options": [
+      "le fonctionnement principal de l’installation",
+      "le câblage électrique des armoires",
+      "la nomenclature des pièces spécifiques",
+      "le budget du projet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ce grafcet décrit le fonctionnement principal de l’installation ; les schémas de câblage relèvent de la description structurelle.",
+    "image": null,
+    "source": "GA701 — séance 2, installation (§3, p.13–14)"
+  },
+  {
+    "id": "auto-s2-031",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — installation de la séance 2",
+    "prompt": "Dans l’état initial de la partie opérative de cette installation :",
+    "options": [
+      "les tiges des vérins E et H sont rentrées",
+      "la tige du vérin V est sortie",
+      "aucune brique ne se trouve sur les tapis ni sur le plateau",
+      "toutes les tiges de vérins sont sorties"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "État initial précisé avant d’établir la situation initiale : tiges de E et H rentrées, tige de V sortie, aucune brique sur les tapis et le plateau.",
+    "image": null,
+    "source": "GA701 — séance 2, installation (§3, p.13–14)"
+  },
+  {
+    "id": "auto-s2-032",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — installation de la séance 2",
+    "prompt": "L’installation étudiée comporte combien d’étapes initiales, et lesquelles ?",
+    "options": [
+      "deux : les étapes 0 et 10",
+      "une seule : l’étape 1",
+      "quatre : les étapes 0, 1, 10 et 11",
+      "aucune : le grafcet démarre sur une transition"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Le grafcet du fonctionnement principal possède deux étapes initiales, 0 et 10, activées à la mise en route.",
+    "image": null,
+    "source": "GA701 — séance 2, installation (§3, p.13–14)"
+  },
+  {
+    "id": "auto-s2-033",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — installation de la séance 2",
+    "prompt": "La transition notée « 0-1 » désigne :",
+    "options": [
+      "la transition qui lie l’étape 0 à l’étape 1",
+      "un opérateur de mesure du temps",
+      "une réceptivité valant zéro ou un",
+      "la durée de cycle de la machine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On note « transition 0-1 » la transition liant l’étape 0 à l’étape 1 ; elle est validée dès que l’étape 0 est active.",
+    "image": null,
+    "source": "GA701 — séance 2, installation (§3, p.13–14)"
+  },
+  {
+    "id": "auto-s2-034",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "À un instant donné, un grafcet possède :",
+    "options": [
+      "toujours des étapes actives",
+      "toujours une seule étape active",
+      "parfois aucune étape active",
+      "uniquement des transitions actives"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "À un instant donné, tout grafcet a des étapes actives, qui indiquent les actions se réalisant alors.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-035",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Les transitions intercalées entre les étapes d’un grafcet renferment :",
+    "options": [
+      "les conditions pour changer l’activité des étapes",
+      "les actions à réaliser dans la partie opérative",
+      "les durées de chaque cycle de production",
+      "la liste des pièces produites"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Les transitions intercalées entre les étapes (alternance étape-transition) renferment les conditions pour changer l’activité des étapes.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-036",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Si une transition est validée mais que sa réceptivité reste fausse, la situation du grafcet :",
+    "options": [
+      "n’évolue pas : les étapes actives restent actives",
+      "évolue après un délai par défaut",
+      "se réinitialise automatiquement",
+      "saute directement à la dernière étape"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sans réceptivité vraie, la transition n’est pas franchissable : la situation ne change pas (règle 2).",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-037",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "La situation d’un grafcet à un instant donné est définie par :",
+    "options": [
+      "l’ensemble des étapes actives à cet instant",
+      "la liste des réceptivités du grafcet",
+      "le chronogramme des sorties",
+      "le cahier des charges de la machine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La situation d’un grafcet est l’ensemble des étapes actives à cet instant ; elle évolue par franchissement de transitions.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-038",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Lorsqu’une étape est active, les actions qui lui sont associées sont :",
+    "options": [
+      "réalisées (exécutées)",
+      "suspendues jusqu’à la fin du cycle",
+      "inversées",
+      "enregistrées puis annulées"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Les étapes actives indiquent les actions qui se réalisent alors : les actions associées à une étape active sont exécutées.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-039",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Dans les systèmes automatisés discrets décrits par un grafcet, les actions des étapes sont gérées par :",
+    "options": [
+      "des ordres TOUT OU RIEN",
+      "des lois d’asservissement analogiques",
+      "des équations différentielles",
+      "des courbes d’évolution continues"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Les systèmes discrets gèrent leurs actions par des ordres TOUT OU RIEN ; les systèmes continus relèvent de l’automatique (asservissements).",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
+  },
+  {
+    "id": "auto-s2-040",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "La situation initiale d’un grafcet doit être cohérente avec :",
+    "options": [
+      "l’état initial de la partie opérative",
+      "la liste des fournisseurs de composants",
+      "le plan de maintenance annuel",
+      "la date de mise en service de la machine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Avant d’établir le grafcet, on précise l’état initial de la partie opérative (positions des vérins, présence de pièces) : la situation initiale du grafcet doit s’y accorder.",
+    "image": null,
+    "source": "GA701 — séance 2, installation (§3, p.13–14)"
+  },
+  {
+    "id": "auto-s2-041",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Dans un grafcet, le fait d’avoir plusieurs étapes actives en même temps :",
+    "options": [
+      "est normal, notamment après une divergence en ET (chaînes en parallèle)",
+      "est toujours une erreur de construction",
+      "interdit tout franchissement de transition",
+      "est impossible avec deux étapes initiales"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Plusieurs étapes actives simultanées sont légitimes : au démarrage (étapes initiales 0 et 10) ou après une divergence en ET.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-042",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "Une étape à laquelle aucune action n’est rattachée peut servir à :",
+    "options": [
+      "respecter l’alternance étape-transition (par exemple en divergence en OU)",
+      "jouer le rôle de position d’attente dans certaines structures",
+      "comptabiliser les pièces produites",
+      "remplacer une réceptivité"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Une étape sans action peut être ajoutée pour respecter l’alternance (divergence en OU) ou servir de position d’attente (convergence en ET).",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
+  },
+  {
+    "id": "auto-s2-043",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "En divergence en OU :",
+    "options": [
+      "plusieurs options de poursuite du processus sont présentées à l’issue d’une même chaîne-séquences",
+      "les options doivent être différentes et exclusives les unes des autres",
+      "toutes les branches sont exécutées simultanément",
+      "une seule transition sert toutes les branches"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Divergence en OU : plusieurs options exclusives de poursuite ; autant de transitions que de chaînes aval.",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
+  },
+  {
+    "id": "auto-s2-044",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "En divergence en ET :",
+    "options": [
+      "plusieurs chaînes-séquences sont lancées simultanément à l’issue d’une chaîne unique",
+      "une seule condition permet de lancer l’ensemble des chaînes",
+      "chaque branche possède obligatoirement sa propre réceptivité",
+      "les branches s’exécutent l’une après l’autre"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Divergence en ET : lancement simultané de plusieurs chaînes-séquences, avec une seule condition pour l’ensemble.",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
+  },
+  {
+    "id": "auto-s2-045",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "Un saut d’étapes (pontage) dans un grafcet permet de :",
+    "options": [
+      "court-circuiter une ou plusieurs séquences si une condition est vraie",
+      "lancer deux chaînes en parallèle",
+      "attendre la fin de toutes les branches",
+      "supprimer la réceptivité suivante"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Le saut (pontage) évite une partie des séquences quand une condition est vérifiée ; structure du GRAFCET standard.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848)"
+  },
+  {
+    "id": "auto-s2-046",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "Une reprise de séquence (boucle) dans un grafcet permet de :",
+    "options": [
+      "reprendre une ou plusieurs séquences déjà réalisées tant qu’une condition n’est pas satisfaite",
+      "activer simultanément deux chaînes-séquences",
+      "sauter directement à la fin du cycle",
+      "désactiver l’étape initiale"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "La reprise de séquence fait rejouer une portion de grafcet tant que la condition de sortie n’est pas vraie ; structure du GRAFCET standard.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848)"
+  },
+  {
+    "id": "auto-s2-047",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Pour synchroniser l’évolution de deux grafcets, on peut utiliser dans une réceptivité :",
+    "options": [
+      "la variable d’étape d’un autre grafcet (par exemple X15 du grafcet N)",
+      "la couleur du câblage des capteurs",
+      "le prix des vérins de la machine",
+      "le nom de l’automate programmable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Une réceptivité peut intégrer la variable d’étape d’un autre grafcet pour synchroniser les évolutions ; structure du GRAFCET standard.",
+    "image": null,
+    "source": "GRAFCET standard (CEI 848)"
+  },
+  {
+    "id": "auto-s2-048",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "Parmi les écritures suivantes, lesquelles peuvent constituer une réceptivité ?",
+    "options": [
+      "une équation booléenne (par exemple a . b)",
+      "une variable d’étape (par exemple X3)",
+      "une mesure analogique brute de température",
+      "un commentaire libre rédigé en français"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Une réceptivité est une condition booléenne : équation booléenne, variable d’étape Xn, etc. — jamais une mesure brute ni un texte libre.",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
+  },
+  {
+    "id": "auto-s2-049",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "En convergence en ET, pour lancer la chaîne aval, il faut :",
+    "options": [
+      "que toutes les chaînes-séquences amont soient terminées",
+      "qu’une condition supplémentaire « a » soit vérifiée (elle vaut 1 si elle n’a pas lieu d’être)",
+      "qu’une seule chaîne amont soit terminée",
+      "que les chaînes amont restent actives"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Convergence en ET : toutes les chaînes amont terminées, plus une condition supplémentaire « a » (remplacée par 1 si inutile).",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
+  },
+  {
+    "id": "auto-s2-050",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — règles d’évolution",
+    "prompt": "À propos des règles d’évolution du GRAFCET, indiquez ce qui est vrai :",
+    "options": [
+      "l’évolution exige une transition validée ET sa réceptivité vraie",
+      "le franchissement désactive les étapes amont et active les étapes aval à la même date",
+      "une transition non validée peut être franchie si sa réceptivité est vraie",
+      "le grafcet peut évoluer sans passer par les étapes initiales"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Synthèse : règle 2 (validée + réceptivité vraie) et règle 3 (désactivation amont et activation aval simultanées) ; les propositions fausses contredisent ces règles.",
+    "image": null,
+    "source": "GA701 — séance 2, règles d’évolution (règle 1, validation)"
+  },
+  {
+    "id": "auto-s2-051",
+    "subject": "automatisme",
+    "type": "multiple",
+    "category": "GRAFCET — ossature et structures",
+    "prompt": "Parmi ces formes, lesquelles sont proscrites dans un grafcet (symboles non normalisés) ?",
+    "options": [
+      "un ovale pour représenter une action",
+      "un triangle pour représenter une étape",
+      "un carré pour représenter une étape",
+      "un trait horizontal pour représenter une transition"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Le GRAFCET n’utilise que deux symboles génériques (carré pour l’étape, trait horizontal pour la transition) ; toute autre forme est proscrite.",
+    "image": null,
+    "source": "GA701 — séance 1 (structures et symboles)"
   }
 ]

@@ -1,6 +1,6 @@
 # QCM-gilles-app
 
-Application de révision de QCM des matières de GM, en français, sans compte ni serveur obligatoire.
+Application de révision locale, en français, sans compte ni serveur obligatoire.
 
 ## Lancer l'application
 
@@ -17,6 +17,7 @@ Puis ouvre <http://localhost:8000>.
 
 ## Fonctions
 
+- Page de menu avec trois icônes de matières (Automatisme, Automatique, Ressources humaines) et compteurs de questions, plus une option de session mixte toutes matières.
 - Sélection de matière, choix du nombre de questions et filtres par thème.
 - Option pour ne garder que les questions illustrées.
 - Mélange des questions et des propositions.
@@ -27,7 +28,7 @@ Puis ouvre <http://localhost:8000>.
 
 ## Banque initiale
 
-159 questions d'Automatisme : 150 questions GA701 déjà présentes dans l'espace de travail (séance 1), 8 questions créées à partir des extraits de la séance 2 transmis dans la conversation, et 1 question associée à un chronogramme pédagogique créé pour l'application. Les matières Automatique et Ressources humaines sont configurées mais leurs banques sont encore vides.
+202 questions d'Automatisme, dont 40 questions à choix multiples récentes dans le style « cases à cocher, une ou plusieurs bonnes réponses » : 15 sur les règles d'évolution (règles 2 et 3, franchissement, variables d'étape) et 25 sur la règle 1, la validation des transitions, l'installation étudiée en séance 2 (étapes initiales 0 et 10, état initial des vérins) et les structures du GRAFCET (saut, reprise de séquence, synchronisation). Le reste : 150 questions GA701 (séance 1), 8 sur la mesure du temps et les règles d'évolution, 3 sur la règle 5, et 2 questions illustrées (chronogramme, portions de grafcets). Les matières Automatique et Ressources humaines sont configurées mais leurs banques sont encore vides.
 
 Le filtre « uniquement les questions avec une image » fonctionne déjà avec la question du chronogramme. Tu peux aussi ajouter tes propres questions illustrées dans l'onglet « Banque de questions ».
 
